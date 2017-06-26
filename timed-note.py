@@ -2,6 +2,12 @@ import os
 from datetime import datetime
 from pynput import keyboard
 
+# fname = datetime.now().strftime('timed-note_%Y-%m-%d.txt')
+# if os.path.exists(fname):
+#     with open(fname, 'r+') as f
+# else:
+#     with open(fname, 'w') as f
+
 def PRESS(key):
     dtime0 = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     print(dtime0)
@@ -13,11 +19,6 @@ def PRESS(key):
 def RELEASE(key):
     return False
 
-# fname = datetime.now().strftime('timed-note_%Y-%m-%d.txt')
-# if os.path.exists(fname):
-#     with open(fname, 'r+') as f
-# else:
-#     with open(fname, 'w') as f
 
 def KEY_MONITORING():
     with keyboard.Listener(on_press=PRESS, on_release=RELEASE) as listener:
