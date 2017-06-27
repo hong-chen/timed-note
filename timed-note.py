@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from pynput import keyboard
 
+
 # fname = datetime.now().strftime('timed-note_%Y-%m-%d.txt')
 # if os.path.exists(fname):
 #     with open(fname, 'r+') as f
